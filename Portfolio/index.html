@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea27d334a5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!---------------Header--------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="menu-xmark" class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="menu-xmark" class="fa-solid fa-bars" onclick="openmenu()"></i><!--menu bar-->
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Rahmi</span> <br>Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------About--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1"><img src="images/user.png" alt=""></div>
+
+                <div class="about-col2">
+                    <h1 class="sub-titile">About Me</h1>
+                    <p>
+                        A recent graduate engineering student in MSc Biomedical Engineering degree at the Ulster
+                        University with strong academic achievement, complemented by 2 internships
+                        project, showcasing expertise in mechanical and electronic device design and academic writing.
+                        Possess excellent written and oral communication, customer service management and technical
+                        support skills.
+                        Experienced in IT knowledge; Microsoft packages (Word, Excel and Outlook). Keen to pursue a
+                        career
+                        in a engineering role with focus on quality assurance and validation officer.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opens('skills')">Skills</p>
+                        <p class="tab-links" onclick="opens('experience')">Experience</p>
+                        <p class="tab-links" onclick="opens('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <!--'id' and the 'onclick' function, which is 'opens', element uses same name to be able to associate them later in js code-->
+                        <ul>
+                            <li><span>Web Development</span><br>Desigining Web/App</li>
+                            <li><span>App Development</span><br>Desigining Android</li>
+                            <li><span>Software</span><br>Building Web/App</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Python Developer Training at Codeacademy</li>
+                            <li><span>2022 - 2023</span><br>MSc Degree in Engineering at Ulster University</li>
+                            <li><span>2021 - 2022</span><br>Biomedical/Clinical Engineer at hospital</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Python Developer</li>
+                            <li><span>2022 - 2023</span><br>MSc Biomedical Engineering</li>
+                            <li><span>2014 - 2018</span><br>BSc Biomedical Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ftbh shbeerm snjbf dkndjdnejfjfb ednejfbjfbjfjn</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ftbh shbeerm snjbf dkndjdnejfjfb ednejfbjfbjfjn</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>APP Design</h2>
+                    <p>Lorem ftbh shbeerm snjbf dkndjdnejfjfb ednejfbjfbjfjn</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------MY WORK--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1 image">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2 image">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3 image">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------Contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>07360731857</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/rahmi-alkan"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Rahmi. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <!-----------------JavaScript--------------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");//tab-links are gathered in 'tablinks'
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opens(tabname) {//operates below directions once onclick
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");//removes underline of skills, experience and education
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab"); //removes content of skills, experience and education
+            }
+            event.currentTarget.classList.add("active-link"); //adds underline of links
+            document.getElementById(tabname).classList.add("active-tab");// tabname=opens(skills)+opens(experience)+opens(education)=ID. 
+            //thats why in the aerlier of this code 'id' and element of opens function are named same
+        }
+
+    </script>
+
+    <script>
+        var sidemenu1 = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu1.style.right = "0";//side menu will be visible
+        }
+        function closemenu() {
+            sidemenu1.style.right = "-200px";//side menu will be hidden
+        }
+    </script>
+
+
+
+</body>
+
+</html>
